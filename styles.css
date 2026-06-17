@@ -241,11 +241,21 @@ body::before {
   justify-content: space-between;
   gap: 24px;
 }
-.nav-logo-placeholder {
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+.nav-logo {
+  display: block;
+  height: 38px;
+  width: auto;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.45));
+  transition: filter 0.3s var(--ease), height 0.3s var(--ease);
+}
+/* once the nav has a solid blurred bg, the glow is no longer needed */
+.nav.is-stuck .nav-logo { filter: none; }
+
+.footer-logo {
+  display: block;
+  height: 46px;
+  width: auto;
+  margin-bottom: 18px;
 }
 .nav__links {
   display: flex;
@@ -781,6 +791,8 @@ body::before {
   :root { --nav-h: 70px; }
 
   .nav__links { display: none; }
+  .nav-logo { height: 30px; }
+  .footer-logo { height: 40px; }
 
   .hero { justify-content: flex-end; padding-bottom: 110px; }
   .hero__title { font-size: clamp(46px, 15vw, 84px); }

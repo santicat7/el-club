@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Club — Gimnasio, CrossFit y Funcional · Paysandú</title>
+  <meta name="description" content="El Club — CrossFit, musculación, funcional y boxeo en Paysandú, Uruguay. Cross Fit & Friends. Te acompañamos en cada paso." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="El Club — No venís a probarte. Venís a superarte." />
+  <meta property="og:description" content="Gimnasio, CrossFit y entrenamiento funcional en Paysandú. Comunidad real. Resultados reales." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=20260617" />
+</head>
+<body>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" data-lenis>
+        <!-- REEMPLAZAR con: <img src="assets/img/logo.png" class="nav-logo" alt="El Club"> -->
+        <div class="nav-logo-placeholder">EL CLUB</div>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#disciplinas" data-lenis>Disciplinas</a>
+        <a href="#horarios" data-lenis>Horarios</a>
+        <a href="#nosotros" data-lenis>Nosotros</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn--red nav__cta" data-magnetic data-lenis>Inscribite</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img class="hero__img" src="assets/img/hero.jpg?v=20260617"
+             alt="Atleta entrenando en El Club" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="eyebrow" data-reveal>Paysandú · Uruguay</span>
+
+        <h1 class="hero__title">
+          <span class="line-mask"><span class="line">No venís</span></span>
+          <span class="line-mask"><span class="line">a probarte.</span></span>
+          <span class="line-mask"><span class="line line--red">Venís a</span></span>
+          <span class="line-mask"><span class="line line--red">superarte.</span></span>
+        </h1>
+
+        <p class="hero__sub" data-hero-fade>
+          CrossFit, musculación, funcional y boxeo.<br />
+          Te acompañamos en cada paso — vengas de donde vengas.
+        </p>
+
+        <div class="hero__actions" data-hero-fade>
+          <a href="#contacto" class="btn btn--red" data-magnetic data-lenis>Empezá hoy</a>
+          <a href="#disciplinas" class="btn btn--ghost" data-magnetic data-lenis>Ver disciplinas</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" data-hero-fade aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Comunidad</span><i>·</i><span>Fuerza</span><i>·</i><span>Entrenamiento</span><i>·</i><span>CrossFit</span><i>·</i><span>Funcional</span><i>·</i><span>Disciplina</span><i>·</i><span>Paysandú</span><i>·</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT 01 ============ -->
+    <section class="statement" id="nosotros">
+      <div class="statement__text">
+        <span class="eyebrow" data-reveal>El método</span>
+        <h2 class="statement__title split">No hay atajos. Hay quien te guía.</h2>
+        <p class="statement__body" data-reveal>
+          En El Club entrenás con método y con gente que te enseña. No importa si recién
+          empezás o si ya competís: te acompañamos en cada paso para que mejores tu día a día.
+        </p>
+        <a href="#disciplinas" class="link-arrow" data-reveal data-lenis>Conocé las disciplinas <span>→</span></a>
+      </div>
+      <div class="statement__media" data-reveal-clip>
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80"
+             alt="Levantamiento de pesas en El Club" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ============ STATS MARQUEE ============ -->
+    <section class="marquee stats-marquee" aria-label="El Club en números" data-marquee-reverse>
+      <div class="marquee__track">
+        <div class="marquee__group stats-group">
+          <span class="stat-item"><b>500+</b> Miembros</span><i>·</i>
+          <span class="stat-item"><b>50+</b> Clases por semana</span><i>·</i>
+          <span class="stat-item"><b>6</b> Disciplinas</span><i>·</i>
+          <span class="stat-item"><b>13h</b> Abierto por día</span><i>·</i>
+          <span class="stat-item"><b>1</b> Comunidad</span><i>·</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT 02 (inverted) ============ -->
+    <section class="statement statement--reverse">
+      <div class="statement__media" data-reveal-clip>
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=80"
+             alt="Comunidad entrenando junta en El Club" loading="lazy" />
+      </div>
+      <div class="statement__text">
+        <span class="eyebrow" data-reveal>La comunidad</span>
+        <h2 class="statement__title split">Llegás solo. Te quedás por la gente.</h2>
+        <p class="statement__body" data-reveal>
+          El Club no es solo un lugar para entrenar. Es una comunidad que entrena,
+          comparte y hace eventos juntos — y que te empuja a volver mañana.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ DISCIPLINAS ============ -->
+    <section class="disciplinas" id="disciplinas">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Lo que hacemos</span>
+        <h2 class="section-head__title split">Elegí tu disciplina.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1200&q=80"
+                 alt="Clase de CrossFit" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__index">01</span>
+            <h3 class="card__title">CrossFit</h3>
+            <p class="card__desc">Entrenamiento de alta intensidad en grupo. Fuerza, resistencia y comunidad en cada WOD.</p>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80"
+                 alt="Sala de musculación" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__index">02</span>
+            <h3 class="card__title">Musculación</h3>
+            <p class="card__desc">Equipamiento completo y planes personalizados para construir fuerza e hipertrofia.</p>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&q=80"
+                 alt="Entrenamiento funcional" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__index">03</span>
+            <h3 class="card__title">Funcional</h3>
+            <p class="card__desc">Movimientos que mejoran tu vida real. Movilidad, coordinación y potencia.</p>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1200&q=80"
+                 alt="Clase de boxeo" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__index">04</span>
+            <h3 class="card__title">Boxeo</h3>
+            <p class="card__desc">Técnica, ritmo y descarga. Coordinación y cardio en cada round.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="disciplinas__extra" data-reveal>
+        También: <strong>Electrofitness</strong> · <strong>Presoterapia</strong> · <strong>Planificación de entrenamiento</strong>
+      </p>
+    </section>
+
+    <!-- ============ MANIFIESTO ============ -->
+    <section class="manifiesto">
+      <h2 class="manifiesto__title split-big">La disciplina no es un sacrificio. Es el camino.</h2>
+      <p class="manifiesto__sub" data-reveal>
+        No prometemos magia. Prometemos un lugar donde aparecer todos los días tiene sentido.
+      </p>
+    </section>
+
+    <!-- ============ HORARIOS ============ -->
+    <section class="horarios" id="horarios">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal>Cuándo entrenamos</span>
+        <h2 class="section-head__title split">Horarios.</h2>
+      </div>
+
+      <div class="schedule">
+        <!-- Acceso libre -->
+        <div class="schedule__group" data-reveal>
+          <span class="schedule__cat">Acceso libre</span>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">Musculación</span>
+            <div class="schedule__when">
+              <span><b>Lun a Vie</b> 7:00 – 22:00</span>
+              <span><b>Sábados</b> 10:00 – 15:00</span>
+            </div>
+          </div>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">Planificación</span>
+            <div class="schedule__when">
+              <span><b>Lun a Vie</b> 7:00 – 22:00</span>
+              <span><b>Sábados</b> 10:00 – 15:00</span>
+            </div>
+          </div>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">Electrofitness · Presoterapia</span>
+            <div class="schedule__when">
+              <span class="schedule__when--muted">Con agenda previa</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clases -->
+        <div class="schedule__group" data-reveal>
+          <span class="schedule__cat">Clases</span>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">CrossFit</span>
+            <div class="schedule__when">
+              <span><b>Lun a Vie</b> 7:00 · 9:00 · 13:30 · 14:30 · 18:00 · 19:00 · 20:00 · 21:00</span>
+            </div>
+          </div>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">Funcional</span>
+            <div class="schedule__when">
+              <span><b>Lun a Vie</b> 8:00 · 17:00</span>
+              <span><b>Mar y Jue</b> 8:00</span>
+            </div>
+          </div>
+
+          <div class="schedule__row">
+            <span class="schedule__disc">Boxeo</span>
+            <div class="schedule__when">
+              <span><b>Lun a Vie</b> 16:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="contacto">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <span class="eyebrow" data-reveal>Empezá ahora</span>
+      <h2 class="cta__title split-big">El primer paso es hoy.</h2>
+      <p class="cta__sub" data-reveal>
+        Escribinos y reservá tu primera clase. Sin compromiso. Solo ganas.
+      </p>
+      <a href="https://wa.me/59800000000?text=Hola%20El%20Club%2C%20quiero%20empezar%20a%20entrenar"
+         class="btn btn--red btn--lg" data-magnetic data-reveal target="_blank" rel="noopener">
+        Escribinos por WhatsApp
+      </a>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="nav-logo-placeholder">EL CLUB</div>
+        <p>Cross Fit &amp; Friends<br />Paysandú, Uruguay</p>
+      </div>
+      <nav class="footer__links" aria-label="Pie de página">
+        <a href="#disciplinas" data-lenis>Disciplinas</a>
+        <a href="#horarios" data-lenis>Horarios</a>
+        <a href="#nosotros" data-lenis>Nosotros</a>
+        <a href="#contacto" data-lenis>Contacto</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 El Club. Todos los derechos reservados.</span>
+      <span>Hecho por <a href="#" rel="noopener">Nikato Estudio</a></span>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script defer src="lib/gsap.min.js?v=20260617"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20260617"></script>
+  <script defer src="lib/lenis.min.js?v=20260617"></script>
+  <script defer src="main.js?v=20260617"></script>
+</body>
+</html>

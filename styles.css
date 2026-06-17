@@ -19,6 +19,8 @@
 
   --maxw:   1320px;
   --gutter: clamp(20px, 5vw, 80px);
+  /* single symmetric container: gutter on narrow, centered maxw on wide */
+  --cw:     min(100% - (var(--gutter) * 2), var(--maxw));
 
   --nav-h:  84px;
 }
@@ -232,10 +234,9 @@ body::before {
   border-bottom-color: var(--border);
 }
 .nav__inner {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: 0 auto;
   height: var(--nav-h);
-  padding: 0 var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -426,9 +427,9 @@ body::before {
    STATEMENT (text + media)
    ===================================================================== */
 .statement {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: 0 auto;
-  padding: clamp(90px, 13vh, 180px) var(--gutter);
+  padding: clamp(90px, 13vh, 180px) 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(40px, 6vw, 100px);
@@ -497,9 +498,8 @@ body::before {
    SECTION HEAD (shared)
    ===================================================================== */
 .section-head {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: 0 auto;
-  padding: 0 var(--gutter);
 }
 .section-head .eyebrow { margin-bottom: 20px; }
 .section-head__title {
@@ -513,17 +513,15 @@ body::before {
 .disciplinas .section-head { margin-bottom: clamp(40px, 6vh, 70px); }
 
 .cards {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: 0 auto;
-  padding: 0 var(--gutter);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .disciplinas__extra {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: clamp(36px, 5vh, 56px) auto 0;
-  padding: 0 var(--gutter);
   font-weight: 300;
   font-size: clamp(14px, 1.2vw, 16px);
   color: var(--muted);
@@ -620,9 +618,8 @@ body::before {
 .horarios .section-head { margin-bottom: clamp(40px, 6vh, 64px); }
 
 .schedule {
-  max-width: var(--maxw);
+  width: var(--cw);
   margin: 0 auto;
-  padding: 0 var(--gutter);
 }
 .schedule__group { margin-bottom: clamp(40px, 6vh, 72px); }
 .schedule__group:last-child { margin-bottom: 0; }
